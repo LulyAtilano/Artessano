@@ -31,6 +31,10 @@ h1. {
     padding: .5em;
 }
 
+h1:hover {
+    color: #83AF9B;
+}
+
 nav.row {
     display: inline-block;
     /* list-style: none;
@@ -53,7 +57,16 @@ nav.row > ul.col-6 {
 
 nav.row > ul.col-6 > li.col-2 > a {
     text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    size: 2.5em;
 }
+
+nav.row > ul.col-6 > li.col-2 > a:hover {
+    color: #83AF9B;
+    border: 1px solid white;
+    padding: 15px;
+} 
 
 .menu-burger {
     display: none;
@@ -115,17 +128,29 @@ header h2, h3 {
     padding: 15px 8px;
     margin-left: 30px;
     margin-top: 12px;
-    outline: none;
     width: 9em;
 } 
+
+#contact div.col-6 div.row input:hover {
+    color: #FE4365;
+    background-color: white;
+}
 
 #contact div.col-4 div.row h3.col-12 { 
     color: #83AF9B;
     font-size: 1.7em;
 }
 
+#contact div.col-4 div.row h3.col-12:hover {
+    color: #FE4365;
+}
+
 .fa-phone, .fa-envelope {
     color: #83AF9B;
+}
+
+.fa-phone:hover, .fa-envelope:hover {
+    color: #FE4365;
 }
 
 /*      Section Services      */
@@ -170,6 +195,10 @@ header h2, h3 {
     color: #83AF9B;
 }
 
+#services div.row article.col-4 div.row div.col-12 > h4:hover {
+    color: #FE4365;
+}
+
 #services div.row article.col-4 div.row div.col-12 > p {
     padding: 5px 10px 20px 10px;
 }
@@ -185,10 +214,20 @@ header h2, h3 {
     position: relative;
 }
 
+#services div.row article.col-4 div.row div.col-12 > input:hover {
+    border: 2px solid #FE4365;
+    background-color: white;
+    color: black;
+}
+
 /*      Footer      */
 footer {
     padding: 1.5em 1em;
     text-align: center;
+}
+
+footer:hover {
+    color: black;
 }
 
 /*      MEDIA QUERY      
