@@ -25,10 +25,10 @@ https://www.youtube.com/watch?v=uUGHF0dM6GA
     width: 100%;
 }
 
-.container-fluid .row { 
+/*.container-fluid .row { 
     margin: 0 auto;
     max-width: 992px;
-}
+}*/
 
 /** Hack de clearfix **/
 .row::after, .row::before {

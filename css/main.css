@@ -155,27 +155,29 @@ header h2, h3 {
 
 /*      Section Services      */
 #services {
-    /* border: 1px solid red;*/
-    padding: 30px 00px;
+    border: 1px solid red;
+    box-sizing: border-box;
+    padding: 30px 0px;
 }
 
 #services div.row {
     margin: 0;
     position: relative;
-    left: 15%;
+    /*left: 15%;*/
 }
 
 #services div.row article.col-4 div.row {
     left: 0;
 }
 
-/*#services div.row article.col-4 {
-    border: 1px solid green;
-} */ 
+#services div.row article.col-4 {
+   /* border: 1px solid green;*/
+    
+}  
 
 #services div.row article.col-4 div.row div.col-12 {
     color: black;
-    /*border: 1px solid purple; */
+    border: 2px dotted #83AF9B;
     box-sizing: border-box;
     min-height: 463px;
     padding: 0;
@@ -185,14 +187,19 @@ header h2, h3 {
 #services div.row article.col-4 div.row div.col-12 > img {
     border-radius: 40px;
     height: 200px;
+    position: relative;
+    left: 15%;
+    top: 18px;
     width: 300px;
 }
 
 #services div.row article.col-4 div.row div.col-12 > h4 {
+    color: #83AF9B;
+    font-size: 2em;
     padding: 5px 0;
     text-align: center;
-    font-size: 2em;
-    color: #83AF9B;
+    position: relative;
+    top: 10px;    
 }
 
 #services div.row article.col-4 div.row div.col-12 > h4:hover {
@@ -284,6 +291,7 @@ footer:hover {
 
     #services div.row article.col-4 div.row div.col-12 > img {
         position: relative;
+        left: 5%;
         width: 90%;
     }
 
