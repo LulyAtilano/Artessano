@@ -44,6 +44,7 @@ nav.row img {
     float: right;
     padding-top: 1.5em;
     padding-right: 1em;
+    display: none;
 }
 
 nav.row > ul.col-6 {
@@ -66,11 +67,11 @@ nav.row > ul.col-6 > li.col-2 > a:hover {
     padding: 15px;
 } 
 
-.menu-burger {
+img.menu-burger {
     display: none;
 }
 
-.show {
+ul.show {
     display: inline-flex;
 }
 
@@ -161,38 +162,40 @@ header h2, h3 {
 #services div.row {
     margin: 0;
     position: relative;
-    /*left: 15%;*/
 }
+
+/*#services div.row article.col-4 {
+    border: 1px solid black;
+}*/
 
 #services div.row article.col-4 div.row {
-    left: 0;
+    box-sizing: border-box;
+    min-height: auto;
 }
 
-#services div.row article.col-4 {
-   /* border: 1px solid green;*/
-   box-sizing: border-box;
-}  
+#services div.row article.col-4 div.row div.col-12.article-img {
+    border: none;
+    padding: 0;
+}
 
-#services div.row article.col-4 div.row div.col-12 {
+#services div.row article.col-4 div.row div.col-12.article-text {
     color: black;
     border: 2px dotted #83AF9B;
-    box-sizing: border-box;
-    min-height: 463px;
+    height: 230px;
     padding: 0;
     text-align: justify;
 }
 
-#services div.row article.col-4 div.row div.col-12:hover {
+#services div.row article.col-4 div.row div.col-12.article-text:hover {
     border: 2px dotted #FE4365;
 } 
 
-#services div.row article.col-4 div.row div.col-12 > img {
+#services div.row article.col-4 div.row div.col-12.article-img > img {
     border-radius: 40px;
     height: 200px;
     position: relative;
-    left: 15%;
-    top: 18px;
-    width: 300px;
+    object-fit: fill;
+    width: 100%;
 }
 
 #services div.row article.col-4 div.row div.col-12 > h4 {
@@ -200,8 +203,9 @@ header h2, h3 {
     font-size: 2em;
     padding: 5px 0;
     text-align: center;
+    top: 10px;
+    margin-bottom: .2em;    
     position: relative;
-    top: 10px;    
 }
 
 #services div.row article.col-4 div.row div.col-12 > h4:hover {
@@ -212,18 +216,18 @@ header h2, h3 {
     padding: 5px 10px 20px 10px;
 }
 
-#services div.row article.col-4 div.row div.col-12 > input {
+#services div.row article.col-4 div.row div.col-12.article-text > input {
     border-radius: 15px;
-    bottom: 1em;
+    bottom: .5em;
     font-size: 1em;
-    left: 33%;
-    right: 33%;
+    /*left: 33%;
+    right: 33%;*/
+    margin: 0 33%;
     padding: 15px;
-    top: 5px;
     position: relative;
 }
 
-#services div.row article.col-4 div.row div.col-12 > input:hover {
+#services div.row article.col-4 div.row div.col-12.article-text > input:hover {
     border: 2px solid #FE4365;
     background-color: white;
     color: black;
@@ -233,6 +237,7 @@ header h2, h3 {
 footer {
     padding: 1.5em 1em;
     text-align: center;
+    color: white;
 }
 
 footer:hover {
@@ -243,11 +248,13 @@ footer:hover {
         DESKTOP  */
 
 @media (min-width: 100px) and (max-width: 426px) {
-    .hide {
+    nav.row.back-pink-strong ul.col-6.show li.col-2 {
         display: none;
+        float: left;
+        border: 1px solid blue;
     }
 
-    .menu-burger {
+    nav.row > img.menu-burger {
         display: inline;
     }
 
@@ -273,19 +280,20 @@ footer:hover {
     
     #contact div.col-6 div.row input {
         align-content: center;
+        margin: 0 30%;
     }
 
     #contact div.row div.col-4 div.row > h2:last-child {
-        width: 143px;
+        width: 100%;
     }
     
     #contact div.row div.col-4 div.row > h3 {
         padding-top: 5px;
     }
 
-    i > .fa-phone, .fa-envelope {
+    .fa-phone, .fa-envelope {
         display: block;
-        margin-bottom: 5px;
+        padding-bottom: 15px;
     }
 
     #services {
@@ -293,7 +301,6 @@ footer:hover {
     }
 
     #services div.row article.col-4 {
-        height: auto;
         width: 100%;
     }
 
@@ -301,24 +308,31 @@ footer:hover {
         left: 0;
     }
 
-    #services div.row article.col-4 div.row div.col-12 {
-        min-height: 430px;
+    #services div.row article.col-4 div.row div.col-12.article-text {
+        min-height: 230px;
         padding: 0 0.5em;
+    }
+
+    #services div.row article.col-4 div.row div.col-12.article-text:last-child {
+        height: 270px;
     }
 
     #services div.row article.col-4 div.row div.col-12 > img {
         position: relative;
-        left: 5%;
         width: 90%;
     }
 
-    #services div.row article.col-4 div.row div.col-12 > input {
+    /*#services div.row article.col-4 div.row div.col-12 > input {
         left: 33%;
         right: 33%;
-    }
+    }*/
     
     #services div.row article.col-4 div.row div.col-12 > p {
         padding-bottom: 10px; 
+    }
+
+    footer {
+        padding: 24px 6px;
     }
 
 }
