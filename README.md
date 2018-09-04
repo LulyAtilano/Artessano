@@ -13,10 +13,10 @@ Este repositorio se aplica el uso de medias queries para cambiar el estilo depen
 * HTML5
 
 ### Vista Desktop:
-![screenshot-Desktop](./assets/images/artessano-viewDesktop.png)
+![screenshot-Desktop](https://user-images.githubusercontent.com/37431988/45056157-b891b400-b057-11e8-8acb-6165d8d7c48e.png)
 
 ### Vista Mobile:
-![screenshot-Mobile](./assets/images/artessano-viewMobile.png)
+![screenshot-Mobile](https://user-images.githubusercontent.com/37431988/45056228-e7a82580-b057-11e8-89dc-dd1cd174054a.png)
 
 ---
 ## Autora
